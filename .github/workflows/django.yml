@@ -17,6 +17,7 @@ jobs:
           python-version: 3.8
       - name: Instalar Dependências
         run: |
+          pip install backports.zoneinfo
           pip install pipenv
           pipenv sync --dev
       - name: Rodar os testes automáticos
