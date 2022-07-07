@@ -22,7 +22,6 @@ jobs:
         run: |
           pip install pipenv
           pipenv sync --dev
-
       - name: Rodar os testes automáticos
         run: |
           pipenv run pytest pypro
