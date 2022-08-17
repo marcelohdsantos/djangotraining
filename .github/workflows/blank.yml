@@ -37,9 +37,6 @@ jobs:
         run: |
           pip install pipenv
           pipenv sync --dev
-      - name: Configuração do DEBUG
-        run: |
-          cp contrib/env-sample .env
       - name: Rodar Testes Automáticos
         run: |
           pipenv run pytest pypro
